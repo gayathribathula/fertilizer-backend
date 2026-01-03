@@ -5,6 +5,10 @@ import apiRoutes from './routes/api.js';
 
 const app = express();
 const PORT = 5000;
+app.get("/", (req, res) => {
+  res.send("Fertilizer Backend is running 🚀");
+});
+
 
 // ✅ Middleware
 app.use(cors());
